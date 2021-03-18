@@ -1,0 +1,306 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #444; 
+}
+::-webkit-scrollbar-thumb {
+    background: #faa41a; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fad81a; 
+}
+
+body {
+    background-color: #202020;
+}
+
+.navbar {
+    background-color: #111111;
+    height: fit-content;
+    display: flex;
+}
+.logo-nav-left {
+    padding: 5px;
+    width: fit-content;
+}
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    color: #faa41a;
+    font-size: 22.5px;
+    position: absolute;
+    right: 0px;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: calc(4vw + 15px);
+    min-height: 60px;
+    margin-right: 30px;
+    width: fit-content;
+
+}
+.admin-spot {
+    margin: 0px 30px;
+    /* border: 2px solid yellow; */
+    margin-right: 7vw;
+}
+img {
+    margin-top: 3px;
+    margin-left: 3px;
+    height: 4vw;
+    min-height: 50px;
+}
+.home-icon {
+    /* border: 2px solid blue; */
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+.admin-name {
+    padding: 0px 15px;
+}
+
+.applicant-info {
+    /* border: 2px solid yellow; */
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.domains {
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 20px;
+    /* width: 100%; */
+    min-width: max-content;
+}
+.domain-option {
+    min-width: 11vw;
+    height: 3vw;
+    min-height: 30px;
+    margin: 0px 0.1vw;
+    background: transparent;
+    color: #faa41a;
+    border: none;
+    font-size: 20px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ****** ONGOING CLASS ****** */
+.ongoing {
+    background-color: #faa41a;
+    color: #202020;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+}
+/* ************************** */
+
+.applicant-name {
+    /* border: 2px solid red; */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 0px 10px;
+    position: absolute;
+    right: 0%;
+    margin-right: 30px;
+}
+/* Main-content starts here */
+.main-content-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+.left-container, .right-container {
+    margin: 20px;
+    border: 2px solid #faa41a;
+    width: 50%;
+    border-radius: 10px;
+    background: #444444;
+    box-shadow: 5px 5px 10px black;
+    max-height: 70vh;
+}
+.question, .free-text {
+    color: whitesmoke;
+}
+.heading {
+    color: #faa41a;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #faa41a;
+}
+.answer-div {
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+.response {
+    padding: 10px;
+    font-size: 20px;
+    margin: 0px 10px;
+    margin-bottom: 20px;
+}
+.answers {
+    margin-left: 5%;
+    margin-top: 5px;
+}
+.space-it {
+    padding: 10px 10px;
+    /* margin-top: 10px; */
+}
+.applicant-ans {
+    overflow-wrap: break-word;
+}
+.single-correct, .multiple-correct, .one-liner, .descriptive {
+    border-bottom: 1px solid #faa41a;
+    /* border-bottom-width: 1px; */
+}
+/* color schemes */
+.expected-ans {
+    background: #c4c4c4;
+    /* border: 2px solid #fff; */
+    font-size: 17px;
+    border-radius: 5px;
+}
+.correct-ans {
+    background: rgb(71, 255, 47);
+}
+.partially-correct-ans {
+    background: #fad81a;
+}
+/* ************* */
+
+/* right container */
+.primary-head {
+    color: #faa41a;
+    text-align: center;
+    font-size: 25px;
+}
+.secondary-head {
+    display: flex;
+    /* text-align: center; */
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid red; */
+    border-bottom: 1px solid #faa41a;
+    margin: auto;
+}
+.like-icon {
+    color:  rgb(71, 255, 47);
+}
+.dislike-icon {
+    color: rgb(255, 51, 0);
+}
+.react-space {
+    margin: 0px 10px;
+    color: #faa41a;
+    font-size: 20px;
+}
+
+.comment-window {
+    overflow-y: scroll;
+    max-height: 35vh;
+}
+.comment {
+    padding: 20px;
+    border-bottom: 2px solid #faa41a;
+}
+.commentor-info {
+    display: flex;
+    font-size: 20px;
+}
+.commentor-name {
+    margin-left: 20px;
+    color: whitesmoke;
+}
+.actual-comment {
+    background: #c4c4c4;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-wrap: break-word;
+    border-radius: 5px;
+}
+.comment-insert {
+    border-top: 2px solid #faa41a;
+    padding: 20px;
+    padding-top: 10px;
+    box-shadow: 0px -4px 10px black;
+}
+.instructions {
+    font-size: 20px;
+    color: #faa41a;
+}
+textarea {
+    background: #c4c4c4;
+    padding: 10px;
+    width: 70%;
+    height: 100px;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+textarea:focus {
+    outline: #faa41a !important;
+}
+
+/* for dislike comments */
+.dislike-it {
+    transform: rotate(180deg);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    color: rgb(255, 51, 0);
+}
+/* ******************** */
+.react-btn {
+    /* border: 2px solid red; */
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+.input-comment {
+    display: flex;
+    flex-direction: row;
+
+}
+.icons-comment-insert {
+    color: whitesmoke;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+/* to make the selected reaction yellowwwww */
+.activate {
+    color: #faa41a;
+}
+/* **************************************** */
+button {
+    background: #faa41a;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 10px;
+    width: calc(fit-content + 10px);
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.28s all ease-in;
+    transition: 0.1s all ease-out;
+}
+button:focus {
+    background-color: #faa41a !important;
+}
+
+.big-heading {
+    box-shadow: 0px 4px 10px black;
+}

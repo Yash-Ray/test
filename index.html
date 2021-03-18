@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responses</title>
+    <link rel="icon" href="./assets/logoicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./detail.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-nav-left"><img src="./assets/ieeecsnew.png" alt="IEEE-CS Logo"></div>
+        <div class="nav-right">
+            <div class="admin-spot"><i class="fas fa-user-tie admin-icon"></i><span class="admin-name">Shruti Shreya</span></div>
+            <div class="home-icon"><i class="fas fa-home"></i></div>
+        </div>
+    </div>
+    <div class="container-main">
+        <div class="applicant-info">
+            <div class="domains">
+                <div class="technical"><button class="domain-option" id="tech-box" onclick="activate_box1()">Technical</button></div>
+                <div class="management"><button class="domain-option" id="management-box" onclick="activate_box2()">Management</button></div>
+                <div class="design"><button class="domain-option" id="design-box" onclick="activate_box3()">Design</button></div>
+                <div class="documentation"><button class="domain-option" id="docs-box" onclick="activate_box4()">Documentation</button></div>
+            </div>
+            <div class="applicant-name">
+                <div class="name">Arjun Das, <span>20BDS0129</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content-container">
+        <div class="left-container">
+            <div class="heading">
+                <span>Test Attempt</span>
+            </div>
+            <div class="answer-div">
+                <!-- for single correct -->
+                <div class="single-correct">
+                    <div class="response">
+                        <div class="question">Q.1 How would your presence benefit the chapter?</div>
+                        <div class="answers">
+                            <span class="free-text">Expected Answer:</span>
+                            <div class="expected-ans space-it">Arjun Das</div>
+                            <span class="free-text">Applicant's Answer</span>
+                            <div class="applicant-ans space-it correct-ans expected-ans">Arjun Das</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- for multiple correct -->
+                <div class="multiple-correct">
+                    <div class="response">
+                        <div class="question">Q.2 Names of monuments in india</div>
+                        <div class="answers">
+                            <span class="free-text">Expected Answer:</span>
+                            <div class="expected-ans space-it">Taj Mahal, Red Fort, India Gate.</div>
+                            <span class="free-text">Applicant's Answer</span>
+                            <div class="applicant-ans space-it expected-ans partially-correct-ans">India Gate, Taj Mahal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- for One Liners -->
+                <div class="multiple-correct">
+                    <div class="response">
+                        <div class="question">Q.3 Here for One-liners?</div>
+                        <div class="answers">
+                            <span class="free-text">Applicant's Answer</span>
+                            <div class="applicant-ans space-it expected-ans">Yes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- for Descriptive -->
+                <div class="multiple-correct">
+                    <div class="response">
+                        <div class="question">Q.4 Descriptive?</div>
+                        <div class="answers">
+                            <span class="free-text">Applicant's Answer</span>
+                            <div class="applicant-ans space-it expected-ans descriptive-ans">YesCillum laborum id nulla elit aliquip magna ipsum aute anim consectetur.Occaecat tempor quis exercitation officia minim ad ipsum.Consectetur magna laboris sunt aliqua enim quis commodo anim irure.Dolore excepteur tempor eu aliqua ad ea labore amet esse duis fugiat labore proident anim.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="right-container">
+            <div class="big-heading">
+                <div class="heading">
+                    <div class="primary-head">Comments and Votes</div>
+                </div>
+                <div class="secondary-head">
+                    <div class="likes"><i class="fas fa-thumbs-up like-icon"></i><span class="react-space">20</span></div><span class="react-space"></span>
+                    <div class="dislikes"><i class="fas fa-thumbs-down dislike-icon"></i><span class="react-space">5</span></div>
+                </div>
+            </div>
+
+            <div class="comment-window">
+
+                <div class="comment">
+                    <div class="commentor-info">
+                        <div class="commentor-react"><i class="fas fa-thumbs-up like-icon"></i></div>
+                        <div class="commentor-name">Shruti Shreya</div>
+                    </div>
+                    <div class="actual-comment">
+                        Lorem Ipsum
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="commentor-info">
+                        <div class="commentor-react"><i class="fas fa-thumbs-up like-icon dislike-it"></i></div>
+                        <div class="commentor-name">Aditya Menon</div>
+                    </div>
+                    <div class="actual-comment">
+                        Lorem Ipsum
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="commentor-info">
+                        <div class="commentor-react"><i class="fas fa-thumbs-up like-icon"></i></div>
+                        <div class="commentor-name">Lakhan Nad</div>
+                    </div>
+                    <div class="actual-comment">
+                        Lorem Ipsum
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="commentor-info">
+                        <div class="commentor-react"><i class="fas fa-thumbs-up like-icon dislike-it"></i></div>
+                        <div class="commentor-name">Parag Bramh</div>
+                    </div>
+                    <div class="actual-comment">
+                        Lorem Ipsum
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="comment-insert">
+                <div class="instructions"><span>Add Comment</span></div>
+                <div class="input-comment">
+                    <textarea name="add-comment" id="" cols="100" rows="60"></textarea>
+                    <div class="react-btn">
+                        <div class="icons-comment-insert"><i class="fas fa-thumbs-up" ></i><span class="space-it"></span><i class="fas fa-thumbs-down"></i></div>
+                        <div class="btn-comment"><button type="submit">Comment!!</button></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        function activate_box1() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            mang.classList.remove("ongoing");
+            desg.classList.remove("ongoing");
+            docs.classList.remove("ongoing");
+            tech.classList.add("ongoing");
+        }
+
+        function activate_box2() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            tech.classList.remove("ongoing");
+            desg.classList.remove("ongoing");
+            docs.classList.remove("ongoing");
+            mang.classList.add("ongoing");
+        }
+
+        function activate_box3() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            tech.classList.remove("ongoing");
+            mang.classList.remove("ongoing");
+            docs.classList.remove("ongoing");
+            desg.classList.add("ongoing");
+        }
+
+        function activate_box4() {
+            var tech = document.getElementById("tech-box");
+            var mang = document.getElementById("management-box");
+            var desg = document.getElementById("design-box");
+            var docs = document.getElementById("docs-box");
+
+            tech.classList.remove("ongoing");
+            mang.classList.remove("ongoing");
+            desg.classList.remove("ongoing");
+            docs.classList.add("ongoing");
+        }
+    </script>
+</body>
+</html>
